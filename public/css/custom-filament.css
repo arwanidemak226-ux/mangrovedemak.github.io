@@ -1,0 +1,103 @@
+/* === Sidebar === */
+.fi-sidebar {
+    background-color: #0e5028 !important; /* hijau tua */
+}
+
+.fi-sidebar nav span,
+.fi-sidebar nav svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+.fi-sidebar nav .fi-active span,
+.fi-sidebar nav .fi-active svg {
+    color: #ffffff !important; /* kuning emas untuk menu aktif */
+    fill: #facc15 !important;
+    font-weight: bold !important;
+}
+
+/* === Area utama === */
+.fi-main,
+.fi-content,
+.fi-body {
+    background-color: #e6f4ea !important; /* hijau muda lembut */
+}
+
+/* === Card / Container === */
+.fi-card {
+    background-color: #ffffff !important; /* putih bersih */
+    border: 1px solid #15803d !important; /* border hijau tipis */
+    border-radius: 8px !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08) !important;
+}
+
+/* === Header Card & Tabel === */
+.fi-card-header,
+.fi-ta-header {
+    background-color: #15803d !important; /* hijau tua */
+    color: #ffffff !important;
+    font-weight: bold !important;
+}
+
+/* === Tabel === */
+.fi-ta table {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-radius: 0.5rem !important;
+}
+
+.fi-ta table,
+.fi-ta th,
+.fi-ta td {
+    border-color: #15803d !important;
+}
+
+/* Row hover / selected */
+.fi-ta-row:hover {
+    background-color: #f0fdf4 !important; /* hijau sangat muda */
+}
+.fi-ta-row.fi-selected {
+    background-color: #bbf7d0 !important; /* hijau muda */
+}
+
+/* === Form Input (Search, Dropdown, dsb) === */
+.fi-ta input,
+.fi-ta select,
+.fi-ta .fi-input {
+    background-color: #e6f4ea !important; /* hijau muda */
+    border: 1px solid #15803d !important;
+    color: #064e3b !important; /* hijau gelap */
+}
+.fi-ta input::placeholder {
+    color: #065f46 !important; /* hijau medium */
+}
+
+/* === Tombol === */
+.fi-btn {
+    border-radius: 6px !important;
+    font-weight: bold !important;
+}
+
+/* Tombol utama (New ...) */
+.fi-btn-primary,
+.fi-btn:not(.fi-ta .fi-btn) {
+    background-color: #15803d !important;
+    border-color: #15803d !important;
+    color: #ffffff !important;
+}
+.fi-btn-primary:hover,
+.fi-btn:not(.fi-ta .fi-btn):hover {
+    background-color: #166534 !important;
+    border-color: #166534 !important;
+}
+
+/* Tombol Export (khusus di tabel) */
+.fi-ta .fi-btn {
+    background-color: #f59e0b !important; /* oranye */
+    border-color: #f59e0b !important;
+    color: #ffffff !important;
+}
+.fi-ta .fi-btn:hover {
+    background-color: #d97706 !important; /* oranye gelap */
+    border-color: #d97706 !important;
+}
