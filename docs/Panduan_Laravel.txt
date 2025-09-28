@@ -1,0 +1,57 @@
+Panduan Instalasi Laravel dan Konfigurasi MySQL
+
+1. Instalasi Laravel
+
+1.  Pastikan sudah menginstall PHP, Composer, dan Git.
+
+2.  Buka terminal dan jalankan perintah: composer create-project
+    laravel/laravel nama_proyek
+
+3.  Masuk ke folder proyek: cd nama_proyek
+
+4.  Jalankan server Laravel: php artisan serve
+
+5.  Akses di browser melalui: http://127.0.0.1:8000
+
+6.  Mengubah Konfigurasi .env dari SQLite ke MySQL
+
+7.  Buka file .env di folder utama Laravel.
+
+8.  Jika sebelumnya menggunakan SQLite, konfigurasinya mungkin seperti
+    ini: DB_CONNECTION=sqlite DB_DATABASE=database/database.sqlite
+
+9.  Ubah menjadi konfigurasi MySQL, contohnya: DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=nama_database
+    DB_USERNAME=root DB_PASSWORD=
+
+10. Simpan file .env setelah diubah.
+
+11. Migrasi Database
+
+12. Pastikan MySQL sudah berjalan (misalnya dari Laragon/XAMPP).
+
+13. Buat database kosong di MySQL sesuai dengan nama di DB_DATABASE.
+
+14. Jalankan perintah: php artisan migrate
+
+15. Jika ingin mengulang dari awal, jalankan: php artisan migrate:reset
+    php artisan migrate
+
+16. Git & Github
+
+17. Pastikan file .env sudah dimasukkan ke dalam .gitignore agar tidak
+    ikut ke GitHub.
+
+18. Cek dengan perintah: git ls-files | grep .env (jika tidak muncul
+    berarti aman).
+
+19. Push project ke GitHub dengan perintah: git add . git commit -m
+    “Initial commit” git branch -M main git remote add origin git push
+    -u origin main
+
+20. Catatan Penting
+
+-   File .env bersifat rahasia, jangan pernah di-upload ke GitHub.
+-   SQLite cocok digunakan untuk development atau project kecil.
+-   MySQL lebih cocok digunakan untuk production atau project yang butuh
+    performa lebih besar.
